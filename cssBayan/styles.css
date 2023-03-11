@@ -9,10 +9,6 @@ a {
   font-size: medium;
 }
 
-a:hover {
-  color: #2b2b2b;
-}
-
 body {
   height: 99%;
   display: flex;
@@ -163,6 +159,10 @@ body footer.footer img {
 
     .container:hover img.plus {
         visibility: initial;
+    }
+
+    a:hover {
+        color: #2b2b2b;
     }
 }
 
