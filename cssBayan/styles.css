@@ -1,6 +1,31 @@
+html {
+  scroll-behavior: smooth;
+  height: 99%;
+}
+
+a {
+  color: #706f6f;
+  text-decoration: none;
+  font-size: medium;
+}
+
+a:hover {
+  color: #2b2b2b;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+body main.main {
+  flex-grow: 1;
+}
+
 .container {
     width: 50rem;
-    margin: auto;
+    margin: 0 auto;
     color: #1e20ff;
     font-size: x-large;
 }
@@ -91,6 +116,37 @@ main.main .container input:active + label.label .meme {
     opacity: 0.5;
 }
 
+body footer.footer {
+  margin-top: auto;
+}
+
+body footer.footer .container {
+  max-width: 45rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-size: medium;
+  color: #2b2b2b;
+}
+
+body footer.footer div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+body footer.footer div a {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+body footer.footer img {
+  height: 2rem;
+  width: auto;
+}
+
 @media screen and (min-width:821px) {
     main.main .container input:hover + label.label img.meme{
         max-height: 60rem;
@@ -119,6 +175,23 @@ main.main .container input:active + label.label .meme {
     main.main .container input:active + label.label .nameWithPlus img.plus {
         transform: rotate(45deg);
     }
+}
+
+@media screen and (max-width: 400px) {
+  body footer.footer .container {
+    flex-direction: column;
+    font-size: x-small;
+  }
+
+  a {
+    font-size: x-small;
+  }
+
+  body footer.footer img {
+    height: 1rem;
+    width: auto;
+  }
+
 }
 
 @media screen and (max-width:320px) {
