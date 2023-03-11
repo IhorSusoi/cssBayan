@@ -97,6 +97,7 @@ main.main .container input:checked + label.label .nameWithPlus img.plus {
 
 .plus {
     visibility: hidden;
+    transition: 0.5s;
 }
 
 main.main .container input:active + label.label {
